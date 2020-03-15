@@ -8,11 +8,12 @@
             if ( isset ($_POST ['creer'])) {
                 $nom = $_POST ['nom'] ;
                 $description = $_POST ['description'] ;
+                $bienfait = $_POST ['bienfait'] ;
                 $cout = $_POST ['coutenance'] ;
                 $img = $_FILES['image']['name'] ;
                 $prix = $_POST ['prix'] ;
 
-                $req = "INSERT INTO produit(nom,description,coutenance,prix,image) VALUES ('$nom','$description','$cout','$prix','$img')";
+                $req = "INSERT INTO produit(nom,description,bienfait,coutenance,prix,image) VALUES ('$nom','$description','$bienfait','$cout','$prix','$img')";
                 $res = mysqli_query($con,$req) ;
                 if ( !$res )
                     echo ('QueryFieled'.mysqli_error($con)) ;
@@ -34,8 +35,12 @@
                 </div>
                 <div class="form-group">
                     <label> Description de produit : </label>
-                    <TEXTAREA class="form-control" name="description"></TEXTAREA>
+                    <TEXTAREA class="form-control" name="description" style="height: 190px;"></TEXTAREA>
                 </div>
+                <div class="form-group">
+                    <label> Les bienfaits de produit : </label>
+                    <TEXTAREA class="form-control text" name="bienfait" style="height: 190px;"></TEXTAREA>
+            </div>
                 <div class="form-group">
                     <label> Coutenance de produit : </label>
                     <input type="text" name="coutenance" class="form-control">

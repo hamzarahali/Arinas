@@ -24,7 +24,7 @@
                     <a href="<?= 'formulaire_info.php?id='.$row['id'] ?>" style="text-decoration:none"><span class="pr_arinas_qt_add" >Commander </span></a>
                 
                 <hr>
-                <p>Ingredient <span>+</span></p>
+                <p>Les bienfaits <span><br></span> <?= $row ['bienfait'] ?></p>
                 <hr><br>
                 
                 <hr>

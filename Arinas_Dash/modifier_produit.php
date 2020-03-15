@@ -38,6 +38,10 @@
                 <TEXTAREA class="form-control text" name="contenu" style="height: 190px;"><?= $row ['description'] ?></TEXTAREA>
             </div>
             <div class="form-group">
+                <label> Les bienfaits de produit : </label>
+                <TEXTAREA class="form-control text" name="bienfait" style="height: 190px;"><?= $row ['bienfait'] ?></TEXTAREA>
+            </div>
+            <div class="form-group">
                     <label> Coutenance de produit : </label>
                     <input type="text" name="coutenance" class="form-control" value="<?= $row ['coutenance'] ?>">
                 </div>
