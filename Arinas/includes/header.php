@@ -26,7 +26,7 @@
         <li><a  style="color:#333" href="qsn.php">Qui sommes nous</a></li>
         <li><a  style="color:#333" href="blog.php">Blog</a></li>
         <li><a  style="color:#333">Contact</a></li>
-        <li><a  style="color:#333"><i class="fas fa-shopping-bag"></i></a></li>
+        <li><a  style="color:#333" href="commande.php"><i class="fas fa-shopping-bag"></i></a></li>
       </ul>
       
    </nav>

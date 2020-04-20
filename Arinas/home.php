@@ -29,7 +29,7 @@
         <li><a href="qsn.php">Qui sommes nous</a></li>
         <li><a href="blog.php">Blog</a></li>
         <li><a>Contact</a></li>
-        <li><a><i class="fas fa-shopping-bag"></i></a></li>
+        <li><a href="commande.php"><i class="fas fa-shopping-bag"></i></a></li>
       </ul>
    </nav>
 </div>

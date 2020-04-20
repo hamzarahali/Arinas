@@ -18,14 +18,11 @@
             <h2 class="titre_article"><?= $row ['titre'] ?></h2>
             <div class="row articlee">
               <div class="col-6"  data-aos="fade-right">
-                <img src="./images/article1.jpg" height="340px">
+                <img src=<?= 'images/articles/'.$row['image'] ?> height="340px">
               </div>
 
               <div class="col-6" style=margin-top:80px  data-aos="fade-left">
-              <p><?= $row ['contenu'] ?></p>
-
-              <button class="btn btn-outline-success" >Lire la suite</button>
-                
+              <p><?= $row ['contenu'] ?></p>                
               </div>
             </div>
         <?php } ?>
